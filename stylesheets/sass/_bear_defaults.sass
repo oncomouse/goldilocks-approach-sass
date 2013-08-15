@@ -1,0 +1,18 @@
+//@import bourbon/bourbon
+
+$baby_bear_max_width: 30em
+$mummy_bear_max_width: 30em
+$daddy_bear_max_width: 60em
+
+$line_height: 1.618 // golden-ratio(1em, 1)
+$body_font_family: "Georgia", "Times New Roman", sans-serif // $georgia
+
+@mixin cf
+	//@include clearfix
+	&:before, &:after
+		content: ""
+		display: block 
+	&:after
+		clear: both 
+	.ie6 &
+		zoom: 1

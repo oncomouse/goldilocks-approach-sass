@@ -1,0 +1,143 @@
+/* Goldilocks Approach to Responsive Web Design Boilerplate
+ *
+ * Author: Design by Front - @designbyfront
+ * Version: 0.1
+ * URL: http://www.goldilocksapproach.com
+ * ----------------------------------------------------------------------------------------
+ *
+ * CONTENTS - GLOBAL.CSS
+ * -----------------------------------------
+ * 1. RESET
+ * 2. ROOT
+ * 3. CORE TYPOGRAPHY
+ * 4. LINKS
+ * 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+ * 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+ * 7. BROWSER AND NON-SEMANTIC STYLING
+ *
+ * CONTENTS - LAYOUT.CSS
+ * -----------------------------------------
+ * 8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+ * 9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+ *
+ */
+
+@import "bear_defaults";
+
+/* 1. RESET
+ * ---------------------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* 2. ROOT
+ * ---------------------------------------------------------------------------------------- */
+html {
+	overflow-y: scroll;
+	background: white;
+}
+
+/* /ht Ethan Marcotte - http: //front.ie/l8rJaA */
+img, embed, object, video {
+	max-width: 100%;
+}
+
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video {
+	width: 100%;
+}
+
+/* 3. CORE TYPOGRAPHY
+ * ---------------------------------------------------------------------------------------- */
+body {
+	font-family: $body_font_family;
+	font-size: 1em;
+	line-height: $line_height;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: $line_height / 2;
+	line-height: 1em;
+}
+
+p, ul, ol, dl, blockquote {
+	font-size: 1em;
+	line-height: $line_height;
+	margin-bottom: $line_height;
+	max-width: $baby_bear_max_width;
+}
+
+ul {
+	list-style-type: disc;
+	margin-left: $line_height;
+}
+
+ol {
+	list-style-type: decimal;
+	margin-left: $line_height;
+}
+
+nav ul, nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+i, em {
+	font-style: italic;
+}
+
+small {
+	font-size: 80%;
+}
+
+/* 4. LINKS
+ * ---------------------------------------------------------------------------------------- */
+a, a:visited {
+	outline: none;
+	color: #439bbd;
+	text-decoration: underline;
+}
+
+a:hover {
+	outline: none;
+	text-decoration: none;
+}
+
+a:active, a:focus {
+	outline: none;
+}
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+ * ---------------------------------------------------------------------------------------- */
+
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+ * ---------------------------------------------------------------------------------------- */
+#container {
+	padding: $line_height / 2;
+	max-width: $baby_bear_max_width;
+	margin: auto;
+}
+
+aside {
+	width: 100%;
+}
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+ * ---------------------------------------------------------------------------------------- */
+.cf {
+	@include cf;
+}
