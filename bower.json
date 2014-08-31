@@ -8,7 +8,7 @@
   "main": [
   	"stylesheets/scss/global.scss",
 	"stylesheets/scss/layout.scss"
-  ]
+  ],
   "description": "Port of The Goldilocks Approach To Responsive Web Design (http://goldilocksapproach.com/)) to SASS",
   "keywords": [
     "responsive",
