@@ -1,5 +1,6 @@
 .DS_Store
 stylesheets/*.css
+stylesheets/*.css.map
 .sass-cache
 .sass-cache/*
 bower_components/*
