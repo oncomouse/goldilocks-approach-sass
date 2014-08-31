@@ -60,30 +60,30 @@ img, embed, object, video {
 body {
 	font-family: $body_font_family;
 	font-size: 1em;
-	line-height: $line_height;
+	line-height: $leading;
 	color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: $line_height / 2;
+	margin-bottom: $leading / 2;
 	line-height: 1em;
 }
 
 p, ul, ol, dl, blockquote {
 	font-size: 1em;
-	line-height: $line_height;
-	margin-bottom: $line_height;
+	line-height: $leading;
+	margin-bottom: $leading;
 	max-width: $baby_bear_max_width;
 }
 
 ul {
 	list-style-type: disc;
-	margin-left: $line_height;
+	margin-left: $leading;
 }
 
 ol {
 	list-style-type: decimal;
-	margin-left: $line_height;
+	margin-left: $leading;
 }
 
 nav ul, nav ol {
@@ -127,7 +127,7 @@ a:active, a:focus {
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
  * ---------------------------------------------------------------------------------------- */
 #container {
-	padding: $line_height / 2;
+	padding: $leading / 2;
 	max-width: $baby_bear_max_width;
 	margin: auto;
 }
