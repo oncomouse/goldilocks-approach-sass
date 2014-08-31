@@ -2,3 +2,4 @@
 stylesheets/*.css
 .sass-cache
 .sass-cache/*
+bower_components/*
