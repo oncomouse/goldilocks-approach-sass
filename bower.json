@@ -1,0 +1,24 @@
+{
+  "name": "goldilocks-approach-sass",
+  "version": "1.0.0",
+  "homepage": "https://github.com/oncomouse/goldilocks-approach-sass",
+  "authors": [
+    "oncomouse <oncomouse@gmail.com>"
+  ],
+  "description": "Port of The Goldilocks Approach To Responsive Web Design (http://goldilocksapproach.com/)) to SASS",
+  "keywords": [
+    "responsive",
+    "sass",
+    "goldilocks",
+    "css",
+    "framework"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
