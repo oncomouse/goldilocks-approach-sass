@@ -13,20 +13,19 @@ Usage
 
 The Goldilocks approach makes use of a couple of things available in [Bourbon Sass](http://bourbon.io) but not in the base SASS mix.
 
-In the file `_bear_defaults.sass`, I've included some commented lines that can replace the longer contexts. With Bourbon installed, the file looks like:
+In the file `_bear_defaults.scss`, I've included some commented lines that can replace the longer contexts. With Bourbon installed, the file looks like:
 
 ```
-@import bourbon/bourbon
+$baby_bear_max_width: 30em;
+$mummy_bear_max_width: 30em;
+$daddy_bear_max_width: 60em;
 
-$baby_bear_max_width: 30em
-$mummy_bear_max_width: 30em
-$daddy_bear_max_width: 60em
+$leading: golden-ratio(1em, 1);
+$body_font_family: $georgia;
 
-$line_height: golden-ratio(1em, 1)
-$body_font_family: $georgia
-
-@mixin cf
-	@include clearfix
+@mixin cf {
+	@include clearfix;
+}
 ```
 
 But, obviously only use that if you've already installed Bourbon.
